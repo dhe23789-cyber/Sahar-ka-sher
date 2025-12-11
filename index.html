@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahar Ka Sher - Contest</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid gold;
+        }
+        header img {
+            height: 60px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: white;
+        }
+        .section {
+            padding: 60px 20px;
+            border-bottom: 1px solid #333;
+        }
+        h1, h2 {
+            color: gold;
+        }
+        .btn {
+            padding: 12px 20px;
+            background: gold;
+            color: black;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid gold;
+        }
+        .social-icons img {
+            width: 35px;
+            margin: 0 10px;
+        }
+    </style>
+  <style>
+    body{
+      margin:0;
+      font-family: "Poppins", Arial, sans-serif;
+      background:#000;
+      color:#fff;
+    }
+
+    .container{
+      max-width:700px;
+      margin:50px auto;
+      padding:35px;
+      background:#0f0f0f;
+      border-radius:14px;
+      border:1px solid #2c2c2c;
+      box-shadow:0 0 25px rgba(255, 215, 0, 0.08);
+    }
+
+    h1{
+      text-align:center;
+      margin:0 0 20px 0;
+      font-size:28px;
+      color:#ffd700;
+      letter-spacing:1px;
+      text-shadow:0 0 8px rgba(255,215,0,0.4);
+    }
+
+    label{
+      display:block;
+      margin:15px 0 6px;
+      font-size:15px;
+      font-weight:600;
+      color:#f2f2f2;
+    }
+
+    input, textarea, select{
+      width:100%;
+      padding:12px;
+      border-radius:8px;
+      border:1px solid #444;
+      background:#1a1a1a;
+      color:#fff;
+      font-size:15px;
+      transition:0.2s ease;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus{
+      border-color:#ffd700;
+      box-shadow:0 0 10px rgba(255,215,0,0.3);
+      outline:none;
+    }
+
+    textarea{ height:100px; }
+
+    button{
+      width:100%;
+      padding:14px;
+      margin-top:28px;
+      background:linear-gradient(90deg, #ffd700, #ffcc33);
+      color:#000;
+      border:none;
+      border-radius:8px;
+      font-size:18px;
+      font-weight:700;
+      cursor:pointer;
+      transition:0.25s ease;
+      box-shadow:0 0 15px rgba(255,215,0,0.4);
+    }
+
+    button:hover{
+      background:linear-gradient(90deg, #ffcc33, #ffd700);
+      transform:translateY(-2px);
+      box-shadow:0 0 20px rgba(255,215,0,0.65);
+    }
+  </style>
+  <style>
+    body{
+      margin:0;
+      font-family: "Poppins", Arial, sans-serif;
+      background:#000;
+      color:#fff;
+    }
+
+    .container{
+      max-width:700px;
+      margin:50px auto;
+      padding:35px;
+      background:#0f0f0f;
+      border-radius:14px;
+      border:1px solid #2c2c2c;
+      box-shadow:0 0 25px rgba(255, 215, 0, 0.08);
+    }
+
+    h1{
+      text-align:center;
+      margin:0 0 20px 0;
+      font-size:28px;
+      color:#ffd700;
+      letter-spacing:1px;
+      text-shadow:0 0 8px rgba(255,215,0,0.4);
+    }
+
+    label{
+      display:block;
+      margin:15px 0 6px;
+      font-size:15px;
+      font-weight:600;
+      color:#f2f2f2;
+    }
+
+    input, select{
+      width:100%;
+      padding:12px;
+      border-radius:8px;
+      border:1px solid #444;
+      background:#1a1a1a;
+      color:#fff;
+      font-size:15px;
+      transition:0.2s ease;
+    }
+
+    input:focus,
+    select:focus{
+      border-color:#ffd700;
+      box-shadow:0 0 10px rgba(255,215,0,0.3);
+      outline:none;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      margin-top:28px;
+      background:linear-gradient(90deg, #ffd700, #ffcc33);
+      color:#000;
+      border:none;
+      border-radius:8px;
+      font-size:18px;
+      font-weight:700;
+      cursor:pointer;
+      transition:0.25s ease;
+      box-shadow:0 0 15px rgba(255,215,0,0.4);
+    }
+
+    button:hover{
+      background:linear-gradient(90deg, #ffcc33, #ffd700);
+      transform:translateY(-2px);
+      box-shadow:0 0 20px rgba(255,215,0,0.65);
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Header with LOGO link inserted below -->
+<header>
+    <a href="https://www.searchincity.in/" target="_blank">
+        <img src="logo.png" alt="Sahar Ka Sher Logo">
+    </a>
+    <nav>
+        <a href="#about">About the Contest</a>
+        <a href="#rules">Rules & Regulations</a>
+        <a href="#nomination">Nomination Form</a>
+        <a href="#voting-guide">Voting Guidelines</a>
+        <a href="#voting-form">Voting Form</a>
+        <a href="#results">Results</a>
+    </nav>
+</header>
+
+<!-- About the Contest -->
+<section id="about" class="section" style="padding:40px; background:#000; color:#fff;">
+
+  <div style="display:flex; flex-wrap:wrap; align-items:flex-start; gap:30px;">
+
+    <!-- Left Side: Text Content -->
+    <div style="flex:1; min-width:300px;">
+      <h1>About the Contest</h1>
+      <p>"Sahar Ka Sher" competition celebrates the best and most attractive shops in the city. Shops with the highest votes will be crowned as winners.</p>
+
+      <main class="wrap" role="main">
+        <h2>Best Shop Competition — Overview</h2>
+        <p class="lead">Below are the key points about the Best Shop Competition.</p>
+
+        <ol style="line-height:1.6;">
+          <li>The Best Shop Competition is being organized to find the most outstanding shop in the area.</li>
+          <li>Every shop can participate by submitting its nomination form.</li>
+          <li>The competition aims to promote quality service and customer satisfaction.</li>
+          <li>Shops will be judged based on public voting and overall presentation.</li>
+          <li>The shop with the highest number of votes will be declared the winner.</li>
+          <li>This event encourages healthy competition among local businesses.</li>
+          <li>It also helps shop owners improve their services and build a better reputation.</li>
+          <li>Customers play a major role by supporting and voting for their favorite shop.</li>
+          <li>Voting guidelines must be followed to ensure fairness in the competition.</li>
+          <li>The winner will be honored with the title “Best Shop of the Year” and receive public recognition.</li>
+        </ol>
+      </main>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div style="flex:0 0 250px; text-align:center; min-width:200px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" 
+           alt="Best Shop Competition" 
+           style="width:100%; max-width:250px; border-radius:10px;">
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- Rules & Regulations -->
+<section id="rules" class="section">
+    <h2>Rules & Regulations</h2>
+    <ul>
+        <li>Only registered shops can participate.</li>
+        <li>Voting must be fair and genuine.</li>
+        <li>Multiple fake votes may lead to disqualification.</li>
+        <li>Organizers hold the right to final decisions.</li>
+    </ul>
+</section>
+
+<!-- Nomination Form -->
+<section id="nomination" class="section" style="padding:50px 20px; background:#0a0a0a; color:#fff;">
+
+  <div style="display:flex; flex-wrap:wrap; gap:40px; align-items:flex-start; max-width:1100px; margin:auto;">
+
+    <!-- Left Side: Form -->
+    <div style="flex:1; min-width:320px; background:#111; padding:30px; border-radius:15px; box-shadow:0 8px 30px rgba(255,215,0,0.1);">
+      <h1 style="color:#ffd700; text-align:center; margin-bottom:25px; text-shadow:0 0 10px rgba(255,215,0,0.5);">Nomination Form</h1>
+
+      <form action="#" method="post" style="display:flex; flex-direction:column; gap:15px;">
+
+        <label>Shop Name</label>
+        <input type="text" placeholder="Enter shop name" required 
+               style="padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff; font-size:15px; transition:0.2s;">
+        
+        <label>Owner Name</label>
+        <input type="text" placeholder="Enter owner's name" required
+               style="padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff; font-size:15px; transition:0.2s;">
+        
+        <label>Contact Number</label>
+        <input type="tel" placeholder="Enter contact number" required
+               style="padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff; font-size:15px; transition:0.2s;">
+
+        <label>Shop Address</label>
+        <textarea placeholder="Enter complete shop address" required
+                  style="padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff; font-size:15px; resize:none; transition:0.2s;"></textarea>
+
+        <label>Shop Category</label>
+        <select required style="padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff; font-size:15px; transition:0.2s;">
+          <option value="">Select Category</option>
+          <option>Grocery Store</option>
+          <option>Clothing Store</option>
+          <option>Electronics Shop</option>
+          <option>General Store</option>
+          <option>Medical Store</option>
+          <option>Others</option>
+        </select>
+
+        <label>Why Should This Shop Win? (Optional)</label>
+        <textarea placeholder="Write a short reason..." style="padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff; font-size:15px; resize:none; transition:0.2s;"></textarea>
+
+        <button type="submit" style="margin-top:10px; background:linear-gradient(90deg, #ffd700, #ffcc33); color:#000; font-weight:bold; padding:14px; border:none; border-radius:10px; cursor:pointer; font-size:16px; box-shadow:0 4px 15px rgba(255,215,0,0.4); transition:0.3s;">
+          Submit Nomination
+        </button>
+      </form>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div style="flex:0 0 350px; min-width:220px; text-align:center; display:flex; align-items:center; justify-content:center;">
+      <img src="contest.png" 
+           alt="Nomination Image" 
+           style="width:100%; max-width:350px; border-radius:15px; box-shadow:0 8px 30px rgba(255,215,0,0.4); transition: transform 0.3s;">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Voting Guidelines -->
+<section id="voting-guide" class="section">
+    <h2>Voting Guidelines</h2>
+    <p>Follow the instructions to cast your vote correctly. Every user can vote only once.</p>
+<div style="max-width:700px; margin:40px auto; padding:25px; background:#000; color:#fff; border:1px solid #333; border-radius:10px;">
+
+    <h2 style="text-align:center; color:#ffd700; margin-bottom:20px;">
+        Voting Guidelines
+    </h2>
+
+    <ol style="line-height:1.7; font-size:16px; padding-left:20px;">
+        <li>All voters must provide valid details before submitting a vote.</li>
+        <li>Each person is allowed to vote only once in the competition.</li>
+        <li>Votes must be cast for genuine shops participating in the contest.</li>
+        <li>No duplicate, fake, or automated votes will be accepted.</li>
+        <li>Voters should review shop details before making a final choice.</li>
+        <li>Misleading or promoting false information during voting is prohibited.</li>
+        <li>Voting will remain open only during the official contest time.</li>
+        <li>Any attempt to manipulate or cheat the voting system may lead to disqualification.</li>
+        <li>Voters must follow all rules to ensure a fair and transparent competition.</li>
+        <li>The decision of the organizing committee will be final based on valid votes.</li>
+    </ol>
+
+</div>
+
+
+</section>
+
+<!-- Voting Form -->
+<section id="voting-form" class="section">
+   
+  <h1>Voting Form</h1>
+
+  <form action="#" method="post">
+
+    <label>Voter Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Contact Number</label>
+    <input type="tel" placeholder="Enter your mobile number" required>
+
+    <label>Select Shop to Vote For</label>
+    <select required>
+      <option value="">Choose Shop</option>
+      <option>Shop 1</option>
+      <option>Shop 2</option>
+      <option>Shop 3</option>
+      <option>Shop 4</option>
+      <option>Others</option>
+    </select>
+
+    <label>Why Are You Voting for This Shop? (Optional)</label>
+    <input type="text" placeholder="Write reason (optional)"><br></br>
+
+   <a class="btn" href="https://votingformlink.com" target="_blank">Submit Vote</a>
+
+  </form>
+</div>
+</section>
+
+<!-- Results -->
+<section id="results" class="section">
+    <h2>Results</h2>
+    <p>Results will be announced after all votes are verified.</p>
+</section>
+    <footer>Good luck to all participants!</footer>
+
+<!-- Footer -->
+<footer>
+    <div class="social-icons">
+<a href="https://www.facebook.com/searchincity.in" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="40" style="margin-right:10px;">
+</a>
+
+<a href="https://www.instagram.com/searchincity.in/" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="40" style="margin-right:10px;">
+</a>
+
+<a href="https://twitter.com" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="40" style="margin-right:10px;">
+</a>
+
+<!-- ⭐ Added YouTube -->
+<a href="https://www.youtube.com/@SearchincitySpotlight" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="40" style="margin-right:10px;">
+</a>
+
+    </div>
+    <p>Disclaimer: All contest decisions are managed by Amazing TechEvents Pvt. Ltd.</p>
+    <p>© Amazing TechEvents Pvt. Ltd 2025-2026</p>
+</footer>
+
+</body>
+</html>
